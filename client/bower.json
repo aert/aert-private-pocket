@@ -1,0 +1,11 @@
+{
+  "name": "aert-private-pocket",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "underscore": "~1.6.0",
+    "marionette": "~1.8.6",
+    "bootswatch": "~3.1",
+    "backbone.stickit": "~0.8.0"
+  }
+}

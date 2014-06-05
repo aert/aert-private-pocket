@@ -1,0 +1,25 @@
+{
+  "name": "aert-private-pocket-npm",
+  "version": "1.0.0dev",
+  "description": "Js deps for aert-private-pocket-npm",
+  "repository": {
+    "type": "git"
+  },
+  "author": "AERT",
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "latest",
+    "coffee-script": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jade": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-filerev": "latest",
+    "grunt-usemin": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

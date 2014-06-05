@@ -1,4 +1,4 @@
 aert-private-pocket
 ===================
 
-A free alternative to http://getpocket.com .
+A free alternative to http://getpocket.com.
