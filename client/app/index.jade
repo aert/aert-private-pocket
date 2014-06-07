@@ -1,0 +1,72 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        title Private Pocket
+
+        // build:css static/css/foundations.css
+        link(rel="stylesheet", type="text/css", href="bower_components/bootswatch/darkly/bootstrap.min.css")
+        // endbuild 
+
+        // build:css static/css/application.css
+        link(rel="stylesheet", type="text/css", href=".tmp/app/styles/less/application.css")
+        // endbuild 
+
+        // build:js static/js/foundations.js
+        script(src="bower_components/jquery/dist/jquery.js")
+        script(src="bower_components/underscore/underscore.js")
+        script(src="bower_components/backbone/backbone.js")
+
+        script(src="bower_components/backbone.babysitter/lib/backbone.babysitter.min.js")
+        script(src="bower_components/backbone.wreqr/lib/backbone.wreqr.min.js")
+        script(src="bower_components/marionette/lib/backbone.marionette.min.js")
+        script(src="bower_components/backbone.stickit/backbone.stickit.js")
+
+        script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+
+        // endbuild
+
+        // build:js static/js/application.js 
+        script(src=".tmp/app/app.js")
+        script(src=".tmp/app/router.js")
+        script(src=".tmp/app/controller.js")
+        script(src=".tmp/app/models/navigation.js")
+        script(src=".tmp/app/views/navigation.js")
+        script(src=".tmp/app/main.js")
+        // endbuild 
+    body
+        .container
+            .page-header
+                h1 
+                    a.title_score(href="#") Private Pocket <sup><small>1.0</small></sup>
+                
+            #navigation
+
+            br
+
+            #content
+
+        | <!-- {{{ -->
+        | <!-- Piwik -->
+        | <script type="text/javascript">
+        |   var _paq = _paq || [];
+        |   _paq.push(["trackPageView"]);
+        |   _paq.push(["enableLinkTracking"]);
+        | 
+        |   (function() {
+        |     var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.aert.fr/tics/";
+        |     _paq.push(["setTrackerUrl", u+"js/"]);
+        |     _paq.push(["setSiteId", "1"]);
+        |     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        |     g.defer=true; g.async=true; g.src=u+"js/"; s.parentNode.insertBefore(g,s);
+        |   })();
+        | </script>
+        | <!-- End Piwik Code -->
+        | <!-- }}} -->
+
+        // ### Templates ######################################################
+
+        script(type="text/template", id="template-navigation")
+            include templates/_navigation
