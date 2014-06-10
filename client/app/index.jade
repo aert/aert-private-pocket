@@ -7,7 +7,7 @@ html
         title Private Pocket
 
         // build:css static/css/foundations.css
-        link(rel="stylesheet", type="text/css", href="bower_components/bootswatch/darkly/bootstrap.min.css")
+        link(rel="stylesheet", type="text/css", href="bower_components/bootswatch/lumen/bootstrap.min.css")
         // endbuild 
 
         // build:css static/css/application.css
@@ -33,7 +33,9 @@ html
         script(src=".tmp/app/router.js")
         script(src=".tmp/app/controller.js")
         script(src=".tmp/app/models/navigation.js")
+        script(src=".tmp/app/models/item.js")
         script(src=".tmp/app/views/navigation.js")
+        script(src=".tmp/app/views/item_list.js")
         script(src=".tmp/app/main.js")
         // endbuild 
     body
@@ -70,3 +72,5 @@ html
 
         script(type="text/template", id="template-navigation")
             include templates/_navigation
+        script(type="text/template", id="template-item")
+            include templates/_item.jade

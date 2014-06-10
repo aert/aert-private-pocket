@@ -4,8 +4,8 @@ ul.nav.nav-pills
     | <li class="<%= model.getFlagActive('nav-ongoing') %>">
     a(href="#")
         span.glyphicon.glyphicon-play-circle
-        | &nbsp; Parties en cours
-        span.badge <%= Badminscore.Data.games.length %>
+        | &nbsp; My Cards
+        span.badge <%= Wallet.Data.items.length %>
     | </li>
     | <li class="<%= model.getFlagActive('nav-done') %>">
     //a(href="#") 
@@ -16,5 +16,5 @@ ul.nav.nav-pills
     | <li class="<%= model.getFlagActive('nav-new') %>">
     a(href="#game/create")
         span.glyphicon.glyphicon-plus
-        | &nbsp; Nouvelle Partie
+        | &nbsp; Friend's cards
     | </li>

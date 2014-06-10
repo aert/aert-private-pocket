@@ -11,3 +11,6 @@ bootstrap-final:
 
 bower-install:
 	$(NPM_BIN)/bower install
+
+open:
+	xdg-open build/index.html
